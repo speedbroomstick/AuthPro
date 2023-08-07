@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - "3001:3001"
+
+  reg-service:
+    build:
+      context: ./reg-service
+    ports:
+      - "3002:3002"
+
+  mail-service:
+    build:
+      context: ./mail-service
+    ports:
+      - "3003:3003"
